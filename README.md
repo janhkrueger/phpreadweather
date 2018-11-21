@@ -9,7 +9,6 @@ Used for development was **php:7.1-fpm**, running as docker container.
 ## What you need
 * PHP, no matter of cli oder fpm
 * an OpenWeathermap.org api key
-*
 
 
 ## Openweathermap
@@ -30,17 +29,39 @@ In the example script only a very rudimentary error handling is implemented. How
 ## Running
 The script can be run from the webserver. Just point your browser to for example https://localhost/weather.php
 
-Browser, just open
+### Browser, just open
 ```
 https://localhost/weather.php
 ```
 
-Curl
+#### Result
+```
+Location name: Reykjavik
+temparature: 6
+Wind speed: 3.1
+```
+
+### Curl
 ```
 curl https://localhost/weather.php
 ```
 
-PHP-CLI
+#### Result
+```
+Location name: Reykjavik<br />                                                                                                                       
+temparature: 6<br />                                                                                                                                 
+Wind speed: 3.1<br />                                                                                                                                
+```
+
+
+### PHP-CLI
 ```
 php weather.php
+```
+
+#### Result
+```
+Location name: Reykjavik<br />                                                                                                                       
+temparature: 6<br />                                                                                                                                 
+Wind speed: 3.1<br />                                                                                                                                
 ```
